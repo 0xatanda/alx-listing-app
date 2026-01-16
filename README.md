@@ -1,8 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Alx Listing App
+
+The ALX listing App project amin to scaffold and lay the fundational structure for a modern Airbnb clone. This initial milestone focuses on setting up a well-organized and scalable codebase using Nextjs, Typescript, TailwindCSS, and ESLint. By establishing a clean folder structure, reusable componenets, and adhering to best practices, the project ensures a solid starting point for building a dynamic, responsive, and user-friendly property listing page
+
+## 🎯 Project Goals
+
+- Create a responsive and modern property listing interface
+
+- Implement resuable UI components for scalability
+
+- Establish a maintainable project structure with Typescript
+
+- Build a foundation for future features like search, filtering, and booking
+
+## 🏗️ Project Structure
+
+```
+alx-listing-app/
+|
+├── components/           # Reusable React components
+|   |
+│   └── common/          # Common UI components (Card, Button, etc.)
+|
+├── constants/           # Application constants and configuration
+|
+├── interfaces/          # TypeScript type definitions
+|
+├── pages/              # Next.js pages (Pages Router)
+|
+├── public/             # Static assets
+|   |
+│   └── assets/         # Images, icons, and other media files
+|
+├── styles/             # Global styles and Tailwind CSS
+|
+└── README.md           # Project documentation
+
+```
+
+
+## Key Directories
+- ``` Components/ ``` : Contains reusable React components that can be used across the application.
+
+- ``` interfaces/ ``` : Stores reuseable data, configuration settings, and UI text.
+
+- ``` public/assets/ ``` : Houses all static assets like images, svgs and icons used throughout the app.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisties
+
+- Nodejs (latest version)
+
+- npm or yarn
+
+### Installations
+
+- Clone the repository:
+
+``` git clone github.com/0xatanda/alx-listing-app ```
+
+``` cd alx-listing-app ```
+
+-  Install dependencies:
+
+``` npm install ```
+
+
+- Run the development server:
 
 ```bash
 npm run dev
@@ -14,27 +78,71 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- ```npm run dev ```- Start the development server
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- ```npm run build ```- Build the application for production
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- ```npm run start``` - Start the production server
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ```npm run lint``` - Run ESLint for code quality checks
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- Next.js - React framework for production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- TypeScript - Type-safe JavaScript
 
-## Deploy on Vercel
+- Tailwind CSS - Utility-first CSS framework
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ESLint - Code linting and quality assurance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+## 📦 Key Components
+
+### Card Component
+
+A reusable card component for displaying property information with support for images, ratings, and custom content.
+
+### Button Component
+
+A flexible button component with multiple variants (primary, secondary, outline, ghost) and sizes.
+
+## 🔧 Configuration
+
+The project is configured with:
+
+- Pages Router (not App Router) for routing
+
+- Tailwind CSS for styling with custom configuration
+
+- TypeScript for type safety
+
+- ESLint for code quality
+
+## 📝 Development Notes
+- All components are built with TypeScript for better type safety
+
+- Tailwind CSS is configured to scan pages/ and components/ directories
+
+- The project follows Next.js best practices for file organization
+
+- Reusable components are placed in components/common/ for easy access
+
+## 🤝 Contributing
+
+- Fork the repository
+
+- Create a feature branch
+
+- Make your changes
+
+- Run tests and linting
+
+- Submit a pull request
+
+## 📄 License
+
+This project is part of the ALX curriculum and is for educational purposes.
